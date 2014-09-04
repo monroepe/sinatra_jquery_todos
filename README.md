@@ -12,6 +12,12 @@ cd sinatra_jquery_todos
 # Install any dependencies
 bundle install
 
+#create the database
+createdb sinatra_jquery_todos
+
+#set schema
+psql -d sinatra_jquery_todos -a -f schema.sql
+
 # Run the app
 ruby app.rb
 ```
